@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <nav>
+    <div>
+      <img src="images/logo.svg" alt="Sneakers Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="">Collections</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <ul>
+      <li><img src="images/icon-cart.svg" alt="" class="cart-button"></li>
+      <li><img src="images/image-avatar.png" alt="" class="user-avatar"></li>
+    </ul>
+    <aside class="cart-window hidden">
+      <div class="header">
+        <p>Cart</p>
+      </div>
+      <div class="body">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
+    </aside>
+  </nav>
+
+  <main>
+    <section class="images">
+      <figure class="big">
+        <img src="images/image-product-1.jpg" alt="" class="big-image">
+      </figure>
+      <div class="thumbnails">
+        <figure class="small">
+          <div class="overlay selected"></div>
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumb01 not-selected">
+        </figure>
+        <figure class="small">
+          <div class="overlay not-selected"></div>
+          <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumb02 not-selected">
+        </figure>
+        <figure class="small">
+          <div class="overlay not-selected"></div>
+          <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumb03 not-selected">
+        </figure>
+        <figure class="small">
+          <div class="overlay not-selected"></div>
+          <img src="images/image-product-4-thumbnail.jpg" alt="" class="thumb04 not-selected">
+        </figure>
+      </div>
+    </section>
+    <section class="info">
+      <h2>SNEAKER COMPANY</h2>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <div class="current">
+          <p class="amt">$125.00</p>
+          <p class="discount">50%</p>
+        </div>
+        <div class="old">$250.00</div>
+      </div>
+      <div class="cart-actions">
+        <div class="quantity">
+          <img src="images/icon-minus.svg" alt="" class="minus">
+          <p class="item-quantity">0</p>
+          <img src="images/icon-plus.svg" alt="" class="plus">
+        </div>
+        <div class="add">
+          <img src="images/icon-cart-white.svg" alt="">
+          <p>Add to cart</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="fullscreen-gallery hidden">
+    <div class="gallery-background"></div>
+    <figure class="icon-close">
+      <img src="images/icon-close-orange.svg" alt="" class="button-close">
+    </figure>
+    <figure class="fullscreen-big">
+      <img src="images/image-product-1.jpg" alt="" class="fullscreen-big-image">
+    </figure>
+    <div class="fullscreen-thumbnails">
+      <figure class="small">
+        <div class="fs-overlay selected"></div>
+        <img src="images/image-product-1-thumbnail.jpg" alt="" class="fs-thumb not-selected">
+      </figure>
+      <figure class="small">
+        <div class="fs-overlay not-selected"></div>
+        <img src="images/image-product-2-thumbnail.jpg" alt="" class="fs-thumb not-selected">
+      </figure>
+      <figure class="small">
+        <div class="fs-overlay not-selected"></div>
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="fs-thumb not-selected">
+      </figure>
+      <figure class="small">
+        <div class="fs-overlay not-selected"></div>
+        <img src="images/image-product-4-thumbnail.jpg" alt="" class="fs-thumb not-selected">
+      </figure>
+    </div>
+    <div class="fullscreen-buttons">
+      <div class="previous">
+        <img src="images/icon-previous.svg" alt="">
+      </div>
+      <div class="next">
+        <img src="images/icon-next.svg" alt="">
+      </div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
